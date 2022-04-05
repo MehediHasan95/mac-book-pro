@@ -1,0 +1,143 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mac Book Pro Assignment</title>
+    <!-- Tailwind Stylesheet -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <main>
+      <section class="container mx-auto">
+        <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
+          <div class="p-10">
+            <img src="images/mac-book-pro.jpg" alt="" />
+          </div>
+          <div class="p-5">
+            <h1 class="text-5xl font-bold text-slate-700">
+              Apple MacBook Pro (13-Inch, 8GB RAM, 256GB Storage) - Silver
+              (Previous Model)
+            </h1>
+            <p class="text-xl text-gray-500 my-4">
+              The Apple M1 chip gives the 13‑inch MacBook Pro speed and power
+              beyond belief. With up to 2.8x CPU performance. Up to 5x the
+              graphics speed. An advanced Neural Engine for up to 11x faster
+              machine learning. And up to 20 hours of battery life so you can go
+              all day. It’s our most popular pro notebook, taken to a whole new
+              level.
+            </p>
+            <!-- Memory -->
+            <div class="my-10">
+              <h3 class="text-xl font-bold text-slate-700 mb-3">Memory</h3>
+              <button
+                id="memory-8gb"
+                class="mb-2 border md:border border-gray-700 px-3 py-2 rounded-full hover:bg-slate-700 hover:text-slate-100"
+              >
+                8GB Memory
+              </button>
+
+              <button
+                id="memory-16gb"
+                class="mb-2 border md:border border-gray-700 px-3 py-2 rounded-full hover:bg-slate-700 hover:text-slate-100"
+              >
+                16GB Memory
+              </button>
+            </div>
+
+            <!-- Storage -->
+            <div class="my-10">
+              <h3 class="text-xl font-bold text-slate-700 mb-3">Storage</h3>
+              <button
+                id="storage-256gb"
+                class="mb-2 border md:border border-gray-700 px-3 py-2 rounded-full hover:bg-slate-700 hover:text-slate-100"
+              >
+                256GB SSD Storage
+              </button>
+
+              <button
+                id="storage-512gb"
+                class="mb-2 border md:border border-gray-700 px-3 py-2 rounded-full hover:bg-slate-700 hover:text-slate-100"
+              >
+                512GB SSD Storage
+              </button>
+
+              <button
+                id="storage-1tb"
+                class="mb-2 border md:border border-gray-700 px-3 py-2 rounded-full hover:bg-slate-700 hover:text-slate-100"
+              >
+                1TB SSD Storage
+              </button>
+            </div>
+            <!-- Delivery Cost -->
+            <div class="my-10">
+              <h3 class="text-xl font-bold text-slate-700 mb-3">
+                Choose your delivery option
+              </h3>
+              <button
+                id="delivery-free"
+                class="mb-2 border md:border border-gray-700 px-3 py-2 rounded-full hover:bg-slate-700 hover:text-slate-100"
+              >
+                Friday, Apr 29 FREE Prime Delivery
+              </button>
+
+              <button
+                id="delivery-20tk"
+                class="mb-2 border md:border border-gray-700 px-3 py-2 rounded-full hover:bg-slate-700 hover:text-slate-100"
+              >
+                Friday, Apr 21 Delivery Charge $20
+              </button>
+            </div>
+
+            <!-- Calculation -->
+            <div class="flex justify-between border p-5 rounded-lg">
+              <div>
+                <h3 class="font-bold text-slate-800">Best Price:</h3>
+                <h3 class="font-bold text-slate-800">Extra Memory Cost:</h3>
+                <h3 class="font-bold text-slate-800">Extra Storage Cost:</h3>
+                <h3 class="font-bold text-slate-800">Delivery Cost:</h3>
+                <hr class="border-1 border-slate-800" />
+                <h3 class="font-bold text-slate-800">Total Price:</h3>
+              </div>
+              <div>
+                <h3 class="font-bold text-slate-800">
+                  $<span id="best-price">1299</span>
+                </h3>
+                <h3 class="font-bold text-slate-800">
+                  $<span id="extra-memory-cost">0</span>
+                </h3>
+                <h3 class="font-bold text-slate-800">
+                  $<span id="extra-storage-cost">0</span>
+                </h3>
+                <h3 class="font-bold text-slate-800">
+                  $<span id="delivery-cost">0</span>
+                </h3>
+                <hr class="border-1 border-slate-800" />
+                <h3 class="font-bold text-slate-800">
+                  $<span id="total-price">1299</span>
+                </h3>
+              </div>
+            </div>
+            <!-- Add Promo Code -->
+            <div class="my-5">
+              <p class="text-xl text-slate-700 font-semibold">Add Promo Code</p>
+              <input
+                type="text"
+                id="promo-code"
+                class="border border-slate-700 p-2 rounded-md outline-none"
+                placeholder="Promo Code"
+              />
+              <button
+                id="apply-btn"
+                class="bg-rose-600 text-white px-4 py-2 rounded-md hover:bg-rose-800"
+              >
+                Apply
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
